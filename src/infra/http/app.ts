@@ -22,7 +22,7 @@ app.use([
   morgan("combined"),
 ]);
 
-app.use("v1", v1Router);
+app.use("/v1", v1Router);
 
 const server = app.listen(process.env.PORT || 8080, () => {
   db_connection();
